@@ -1,7 +1,6 @@
 var button = document.getElementById('counter');
 
 button.onclick = function() {
-    /
     var request = new XMLHttpRequest();
     
     request.onreadystatechange = function() {
@@ -18,7 +17,7 @@ button.onclick = function() {
     };
     //Capture the response and store it in a var
     
-    /Make a request to counter end point URL
+    //Make a request to counter end point URL
     request.open('GET', 'http://anupamakpillai.imad.hasura-app.io/counter',true);
     request.send(null);
    
